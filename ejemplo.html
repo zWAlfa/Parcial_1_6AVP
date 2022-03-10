@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo JQUERY Mobile</title>
+	<link rel="stylesheet" href="jquerymobile/jquery.mobile-1.4.5.min.css" />
+
+	<link rel="stylesheet" href="jquerymobile/tema2.min.css" />
+	<link rel="stylesheet" href="jquerymobile/jquery.mobile.icons.min.css">
+	<link rel="stylesheet" href="jquerymobile/themes/colores.css">
+	<script src="jquerymobile/jquery-1.11.1.min.js"></script>
+	<script src="jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div data-role="page" id="inicio" data-theme="a">
+
+		<div data-role="header">
+			<h1>GameStore</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h2>Bienvenidos!</h2><hr>
+			<p>
+				Esta app es una tienda en linea en la cual puedes comprar videojuegos de consola 3ds, espero y te gusten los precios baratos!.
+			</p>
+			<img src="img/inicio.gif" alt="" width="100%">
+
+			<p>
+				Hecho por: Castro Vega Alonso 6AVP
+			</p>
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="productos" data-theme="b">
+		<div data-role="header">
+			<h1>Games</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h2>Listado de productos</h2><hr>
+			<ol data-role="listview">
+			    <li>Mario Kart 7</li>
+			    <li>Super Mario 3D Land</li>
+			    <li>Fire Emblem Fates</li>
+			    <li>Luigi's Mansion</li>
+			    <li>Pokémon Omega Ruby</li>
+			</ol>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="carrito" data-theme="c">
+		<div data-role="header">
+			<h1>Store</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h2>Carrito de compras</h2><hr>
+			<ul data-role="listview" data-inset="true">
+			    <li><a href="#">
+			        <img src="img/MK7.jpg">
+			        <h2>Mario Kart 7</h2>
+			        <p>799.00 MX</p></a>
+			    </li>
+				<li><a href="#">
+			        <img src="img/SM3DL.jpg">
+			        <h2>Super Mario 3D Land</h2>
+			        <p>641.01 MX</p></a>
+			    </li>
+				<li><a href="#">
+			        <img src="img/FEF.jpg">
+			        <h2>Fire Emblem Fates</h2>
+			        <p>1299.00 MX </p></a>
+			    </li>
+				<li><a href="#">
+			        <img src="img/LM.jpg">
+			        <h2>Luigi's Mansion</h2>
+			        <p>899.00 MX</p></a>
+			    </li>
+				<li><a href="#">
+			        <img src="img/PRO.jpg">
+			        <h2>Pokémon Omega Ruby</h2>
+			        <p>1099.00 MX</p></a>
+			    </li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
